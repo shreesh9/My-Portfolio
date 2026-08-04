@@ -1,0 +1,9 @@
+# Dependencies & Build
+node_modules/
+dist/
+.DS_Store
+*.log
+
+# Large Media Files (>100MB exceed GitHub limits)
+*.mp4
+assets/gst/*.mp4

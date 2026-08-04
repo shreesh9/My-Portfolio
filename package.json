@@ -1,0 +1,12 @@
+{
+  "name": "shreesh-portfolio",
+  "version": "1.0.0",
+  "description": "Portfolio of Shreesh Nalawade — Full-Stack Developer & AI/ML Engineer",
+  "scripts": {
+    "dev": "python -m http.server 8080",
+    "start": "python -m http.server 8080"
+  },
+  "keywords": [],
+  "author": "Shreesh Nalawade",
+  "license": "ISC"
+}

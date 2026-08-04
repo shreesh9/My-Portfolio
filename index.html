@@ -1,0 +1,1622 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shreesh Nalawade — Full-Stack Developer & Cloud Architect</title>
+
+    <!-- SEO Meta -->
+    <meta name="description"
+        content="Portfolio of Shreesh Nalawade — Full-Stack Developer, UI/UX Designer, and AWS Cloud Architect from Mumbai. Building production-grade applications with React, PHP, Python, and modern cloud infrastructure.">
+    <meta name="keywords"
+        content="Shreesh Nalawade, Full-Stack Developer, UI/UX Designer, AWS Cloud Architect, React, Portfolio">
+    <meta name="author" content="Shreesh Nalawade">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://shreeshnalawade.vercel.app">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Shreesh Nalawade | Developer Portfolio">
+    <meta property="og:description"
+        content="Full-Stack Developer, UI/UX Designer, and AWS Cloud Architect. Building production-grade applications from Mumbai, India.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://shreeshnalawade.vercel.app">
+    <meta property="og:image" content="assets/og-image.jpg">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Shreesh Nalawade | Developer Portfolio">
+    <meta name="twitter:description" content="Full-Stack Developer, UI/UX Designer, and AWS Cloud Architect.">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml"
+        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90' fill='%23FF0000'>S</text></svg>">
+
+    <!-- Preconnect -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Orbitron:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700&family=Bebas+Neue&display=swap"
+        rel="stylesheet">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+
+    <!-- Lenis Smooth Scroll -->
+    <script src="https://unpkg.com/lenis@1.1.18/dist/lenis.min.js" defer></script>
+
+    <!-- Three.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js" defer></script>
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Shreesh Nalawade",
+        "url": "https://shreeshnalawade.vercel.app",
+        "jobTitle": "Full-Stack Developer & Cloud Architect",
+        "description": "Full-Stack Developer, UI/UX Designer, and AWS Cloud Architect from Mumbai, India",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Mumbai",
+            "addressCountry": "IN"
+        },
+        "email": "shreeshnalawade9@gmail.com",
+        "sameAs": [
+            "https://linkedin.com/in/shreesh9",
+            "https://github.com/shreesh9",
+            "https://www.instagram.com/shxeesh_",
+            "https://www.youtube.com/@shxeesh",
+            "https://linktr.ee/shreesh9"
+        ],
+        "knowsAbout": ["React.js", "PHP", "JavaScript", "Python", "AWS", "UI/UX Design", "Full-Stack Development"]
+    }
+    </script>
+</head>
+
+<body>
+
+    <!-- ============================================================
+         PRELOADER
+         ============================================================ -->
+    <div id="preloader">
+        <div class="preloader-corner preloader-corner--tl"></div>
+        <div class="preloader-corner preloader-corner--tr"></div>
+        <div class="preloader-corner preloader-corner--bl"></div>
+        <div class="preloader-corner preloader-corner--br"></div>
+        <div class="preloader-text" id="preloader-text">Initializing System</div>
+        <div class="preloader-bar-track">
+            <div class="preloader-bar-fill" id="preloader-fill"></div>
+        </div>
+        <div class="preloader-percent" id="preloader-percent">0%</div>
+    </div>
+
+    <!-- ============================================================
+         ATMOSPHERIC OVERLAYS
+         ============================================================ -->
+    <div class="noise-overlay" aria-hidden="true"></div>
+    <div class="scanlines" aria-hidden="true"></div>
+    <div class="vignette" aria-hidden="true"></div>
+    <div class="cyber-grid-overlay" aria-hidden="true"></div>
+
+    <!-- ============================================================
+         CUSTOM CURSOR
+         ============================================================ -->
+    <div class="cursor-dot" id="cursor-dot" aria-hidden="true"></div>
+    <div class="cursor-ring" id="cursor-ring" aria-hidden="true"></div>
+    <div class="cursor-label" id="cursor-label" aria-hidden="true"></div>
+
+    <!-- ============================================================
+         NAVIGATION
+         ============================================================ -->
+    <nav id="main-nav" role="navigation" aria-label="Main navigation">
+        <a href="#hero" class="nav-logo" data-cursor-label="HOME">
+            S<span class="red">.</span>N
+        </a>
+
+        <div class="nav-links">
+            <a href="#about" class="nav-link" data-cursor-label="ABOUT">About</a>
+            <a href="#battlestation" class="nav-link" data-cursor-label="RIG HUB">Battlestation</a>
+            <a href="#experience" class="nav-link" data-cursor-label="EXPERIENCE">Experience</a>
+            <a href="#skills" class="nav-link" data-cursor-label="SKILLS">Skills</a>
+            <a href="#projects" class="nav-link" data-cursor-label="PROJECTS">Projects</a>
+            <a href="#certifications" class="nav-link" data-cursor-label="CERTS">Certifications</a>
+            <a href="#contact" class="nav-link" data-cursor-label="CONTACT">Contact</a>
+            <button id="terminal-toggle-btn" class="terminal-nav-btn" data-cursor-label="TERMINAL">&gt;_
+                TERMINAL</button>
+        </div>
+
+
+        <button class="nav-hamburger" id="nav-hamburger" aria-label="Toggle menu" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </nav>
+
+    <!-- Mobile Nav Overlay -->
+    <div class="nav-mobile-overlay" id="mobile-overlay" role="dialog" aria-label="Mobile navigation">
+        <a href="#about" class="nav-link" onclick="closeMobileNav()">About</a>
+        <a href="#battlestation" class="nav-link" onclick="closeMobileNav()">Battlestation</a>
+        <a href="#experience" class="nav-link" onclick="closeMobileNav()">Experience</a>
+        <a href="#skills" class="nav-link" onclick="closeMobileNav()">Skills</a>
+        <a href="#projects" class="nav-link" onclick="closeMobileNav()">Projects</a>
+        <a href="#certifications" class="nav-link" onclick="closeMobileNav()">Certifications</a>
+        <a href="#education" class="nav-link" onclick="closeMobileNav()">Education</a>
+        <a href="#contact" class="nav-link" onclick="closeMobileNav()">Contact</a>
+    </div>
+
+    <!-- ============================================================
+         HERO SECTION
+         ============================================================ -->
+    <section id="hero" class="section" aria-label="Hero introduction">
+        <!-- Animated Hero Background Photo -->
+        <div class="hero-bg-wrapper" id="hero-bg-wrapper" aria-hidden="true">
+            <div class="hero-bg-image" style="background-image: url('assets/tumbnail.jpg');"></div>
+            <div class="hero-bg-overlay"></div>
+            <div class="hero-scan-beam"></div>
+        </div>
+
+        <canvas id="particles-canvas" aria-hidden="true"></canvas>
+
+
+        <div class="hero-content">
+            <div class="hero-greeting" id="hero-greeting">
+                <span>&lt;</span> Hello, World <span>/&gt;</span>
+            </div>
+
+            <h1 class="hero-name" id="hero-name">
+                SHREESH
+                <span class="hero-lastname">NALAWADE</span>
+            </h1>
+
+            <div class="hero-roles" id="hero-roles" aria-label="Professional roles">
+                <span id="typed-text"></span><span class="typed-cursor">|</span>
+            </div>
+
+            <div class="hero-cta-group" id="hero-ctas">
+                <a href="#projects" class="btn btn-primary" data-cursor-label="VIEW WORK">
+                    Explore My Work
+                </a>
+                <a href="reference stuff/Shreesh_Resume.pdf" class="btn btn-ghost" data-cursor-label="DOWNLOAD"
+                    download>
+                    ↓ Download Resume
+                </a>
+            </div>
+
+            <div class="hero-socials" id="hero-socials">
+                <a href="https://linktr.ee/shreesh9" class="hero-social-link" data-cursor-label="LINKTREE"
+                    target="_blank" rel="noopener noreferrer" aria-label="Linktree">
+                    <svg viewBox="0 0 24 24" fill="currentColor">
+                        <path
+                            d="M13.511 5.853l3.963-3.963 1.982 1.981-3.963 3.964 4.529 4.529-1.982 1.982-3.418-3.418v6.758h-2.804V10.93l-3.418 3.418-1.982-1.982 4.529-4.529-3.963-3.964 1.982-1.981 3.963 3.963V0h2.804v5.853zM10.707 19.684h2.804v4.316h-2.804v-4.316z" />
+                    </svg>
+                </a>
+                <a href="https://linkedin.com/in/shreesh9" class="hero-social-link" data-cursor-label="LINKEDIN"
+                    target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+                        <rect x="2" y="9" width="4" height="12" />
+                        <circle cx="4" cy="4" r="2" />
+                    </svg>
+                </a>
+                <a href="https://github.com/shreesh9" class="hero-social-link" data-cursor-label="GITHUB"
+                    target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path
+                            d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
+                    </svg>
+                </a>
+                <a href="https://www.instagram.com/shxeesh_" class="hero-social-link" data-cursor-label="INSTAGRAM"
+                    target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <rect x="2" y="2" width="20" height="20" rx="5" />
+                        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                        <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+                    </svg>
+                </a>
+                <a href="https://www.youtube.com/@shxeesh" class="hero-social-link" data-cursor-label="YOUTUBE"
+                    target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path
+                            d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19.1c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z" />
+                        <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02" />
+                    </svg>
+                </a>
+
+            </div>
+            <div style="margin-top: 16px;">
+                <a href="mailto:shreeshnalawade9@gmail.com"
+                    style="font-family: var(--font-mono); font-size: 13px; color: var(--ice-dim); background: rgba(128, 151, 183, 0.1); border: 1px solid rgba(128, 151, 183, 0.25); padding: 8px 18px; border-radius: 20px; display: inline-flex; align-items: center; gap: 8px; transition: all 0.3s ease;"
+                    data-cursor-label="SEND EMAIL">
+                    ✉ shreeshnalawade9@gmail.com
+                </a>
+            </div>
+        </div>
+
+        <div class="scroll-indicator" id="scroll-indicator">
+            <span>Scroll to explore</span>
+            <div class="scroll-line"></div>
+        </div>
+    </section>
+
+    <!-- Section Divider -->
+    <div class="section-divider"></div>
+
+    <!-- ============================================================
+         ABOUT SECTION (LIVE GITHUB PROFILE EMBED)
+         ============================================================ -->
+    <section id="about" class="section" aria-label="About me">
+        <div class="container">
+            <div class="section-label reveal-up">// 01 — ABOUT & GITHUB PROFILE</div>
+            <h2 class="section-title reveal-up">
+                Developer <span class="highlight">Profile & System README</span>
+            </h2>
+
+            <!-- Native GitHub README Embed Card -->
+            <div class="github-profile-card reveal-up">
+                <div class="github-profile-header">
+                    <div class="github-profile-title">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path
+                                d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
+                        </svg>
+                        <span>shreesh9 / README.md</span>
+                    </div>
+                    <a href="https://github.com/shreesh9" target="_blank" rel="noopener noreferrer"
+                        class="btn btn-ghost" style="font-size: 11px; padding: 6px 14px;"
+                        data-cursor-label="VIEW GITHUB">
+                        View Live GitHub Profile ↗
+                    </a>
+                </div>
+
+                <div class="github-profile-body">
+                    <!-- ASCII Art Banner from GitHub repo -->
+                    <img src="https://raw.githubusercontent.com/shreesh9/shreesh9/main/ascii.svg"
+                        alt="Shreesh Nalawade ASCII Banner" class="github-svg-banner"
+                        style="width: 460px; max-width: 100%;" loading="lazy">
+
+                    <!-- GitHub Contributions & Telemetry Banner -->
+                    <img src="https://raw.githubusercontent.com/shreesh9/shreesh9/main/stats.svg"
+                        alt="GitHub Contributions & Stats" class="github-svg-banner"
+                        style="width: 620px; max-width: 100%;" loading="lazy">
+
+                    <!-- Quick Telemetry & Social Links -->
+                    <div class="github-links-row">
+                        <a href="https://linktr.ee/shreesh9" target="_blank" rel="noopener noreferrer"
+                            class="github-link-pill">linktree ↗</a>
+                        <a href="https://www.instagram.com/shxeesh_/" target="_blank" rel="noopener noreferrer"
+                            class="github-link-pill">instagram ↗</a>
+                        <a href="https://www.linkedin.com/in/shreesh9/" target="_blank" rel="noopener noreferrer"
+                            class="github-link-pill">linkedin ↗</a>
+                        <a href="mailto:shreeshnalawade9@gmail.com" class="github-link-pill">email ✉</a>
+                    </div>
+
+                    <!-- Header SVG: About -->
+                    <img src="https://raw.githubusercontent.com/shreesh9/shreesh9/main/hd-about.svg" alt="About Section"
+                        class="github-svg-banner" style="width: 620px; max-width: 100%; margin-top: 10px;"
+                        loading="lazy">
+
+                    <!-- Bio Quote & Manifesto -->
+                    <div class="github-bio-quote">
+                        <p style="color: var(--ice); font-weight: 600; margin-bottom: 8px;">&gt; CSE (AI & ML) student
+                            at Mumbai University.</p>
+                        <p style="color: var(--crimson-bright); margin-bottom: 12px;">&gt; Small, sharp tools over big
+                            vague ideas.</p>
+                        <p style="color: var(--ice-dim); line-height: 1.7;">
+                            I build fast, test on real users, and kill what doesn't work. Right now that's
+                            <a href="https://github.com/shreesh9/koshi-career-agent" target="_blank"
+                                style="color: var(--crimson-bright); text-decoration: underline;">koshi-career-agent</a>
+                            — an AI career coach that turns skill gaps into roadmaps. Also deep into full-stack work:
+                            government portals, price-tracking agents, and cloud infra on AWS.
+                        </p>
+                    </div>
+
+                    <!-- Header SVG: Stack -->
+                    <img src="https://raw.githubusercontent.com/shreesh9/shreesh9/main/hd-stack.svg"
+                        alt="Tech Stack Section" class="github-svg-banner"
+                        style="width: 620px; max-width: 100%; margin-top: 10px;" loading="lazy">
+
+                    <!-- Tech Stack Badges -->
+                    <div class="github-stack-samp">
+                        python &nbsp;&nbsp; javascript &nbsp;&nbsp; php &nbsp;&nbsp; java &nbsp;&nbsp; c++ &nbsp;&nbsp;
+                        react &nbsp;&nbsp; mysql &nbsp;&nbsp; aws &nbsp;&nbsp; git &nbsp;&nbsp; linux
+                    </div>
+
+                    <!-- Header SVG: Projects -->
+                    <img src="https://raw.githubusercontent.com/shreesh9/shreesh9/main/hd-projects.svg"
+                        alt="Featured Repositories" class="github-svg-banner"
+                        style="width: 620px; max-width: 100%; margin-top: 10px;" loading="lazy">
+
+                    <!-- Featured Repositories Grid -->
+                    <div class="github-projects-preview">
+                        <div class="github-project-item">
+                            <div
+                                style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
+                                <a href="https://github.com/shreesh9/koshi-career-agent" target="_blank"
+                                    style="font-family: var(--font-mono); font-weight: 700; color: var(--ice); font-size: 14px;">koshi-career-agent
+                                    ↗</a>
+                                <span
+                                    style="font-family: var(--font-mono); font-size: 10px; color: var(--crimson-bright); background: rgba(154, 10, 18, 0.15); padding: 2px 8px; border-radius: 4px;">javascript</span>
+                            </div>
+                            <p style="font-size: 12px; color: var(--steel); line-height: 1.6;">AI-powered career coach
+                                and skill navigator. Tailored learning roadmaps, skill-gap analysis, and interactive
+                                mentoring: profile in, plan out.</p>
+                        </div>
+
+                        <div class="github-project-item">
+                            <div
+                                style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
+                                <a href="https://github.com/shreesh9/PRICE-SENSE-AI" target="_blank"
+                                    style="font-family: var(--font-mono); font-weight: 700; color: var(--ice); font-size: 14px;">PRICE-SENSE-AI
+                                    ↗</a>
+                                <span
+                                    style="font-family: var(--font-mono); font-size: 10px; color: var(--steel-blue); background: rgba(128, 151, 183, 0.15); padding: 2px 8px; border-radius: 4px;">next.js
+                                    • supabase</span>
+                            </div>
+                            <p style="font-size: 12px; color: var(--steel); line-height: 1.6;">Automated price-tracking
+                                platform across Amazon, Walmart, and Zara. AI web scraping, Postgres with scheduled
+                                jobs, email alerts on drops.</p>
+                        </div>
+
+                        <div class="github-project-item">
+                            <div
+                                style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
+                                <span
+                                    style="font-family: var(--font-mono); font-weight: 700; color: var(--ice); font-size: 14px;">VisionBridge</span>
+                                <span
+                                    style="font-family: var(--font-mono); font-size: 10px; color: var(--steel-blue); background: rgba(128, 151, 183, 0.15); padding: 2px 8px; border-radius: 4px;">flutter
+                                    • on-device ai</span>
+                            </div>
+                            <p style="font-size: 12px; color: var(--steel); line-height: 1.6;">Voice-first assistive
+                                application for the visually impaired combining Groq Vision AI (Llama 3.2), MLKit OCR,
+                                and WebRTC volunteer call assistance.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Stats Bar Row -->
+            <div class="about-stats-grid" style="margin-top: 30px;">
+                <div class="about-stat-card reveal-up" data-cursor-label="EXPERIENCE">
+                    <div class="stat-number" data-count="3">0+</div>
+                    <div class="stat-label">Years Building</div>
+                </div>
+                <div class="about-stat-card reveal-up" data-cursor-label="PROJECTS">
+                    <div class="stat-number" data-count="20">0+</div>
+                    <div class="stat-label">Projects Delivered</div>
+                </div>
+                <div class="about-stat-card reveal-up" data-cursor-label="RATING">
+                    <div class="stat-number">5★</div>
+                    <div class="stat-label">Client Rating</div>
+                </div>
+                <div class="about-stat-card reveal-up" data-cursor-label="CERTS">
+                    <div class="stat-number" data-count="15">0+</div>
+                    <div class="stat-label">Certifications</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- ============================================================
+         THE BATTLESTATION & RIG SHOWCASE SECTION
+         ============================================================ -->
+    <section id="battlestation" class="section" aria-label="Interactive Battlestation and Rig Showcase">
+        <div class="container">
+            <div class="section-label reveal-up">// 01.5 — BATTLESTATION & HARDWARE SETUP</div>
+            <h2 class="section-title reveal-up" style="font-size: clamp(22px, 3.5vw, 38px); line-height: 1.25;">
+                Personal Workstation <span class="highlight">& Hardware Rig</span>
+            </h2>
+            <p class="section-subtitle reveal-up">Real photography of my custom Crystal White Ryzen 7 5800X / RTX 4060
+                build, Acer 2K QHD 180Hz display, L-desk, and peripherals setup.</p>
+
+            <!-- Window Container following About section aesthetics -->
+            <div class="github-profile-card reveal-up">
+                <div class="github-profile-header">
+                    <div class="github-profile-title">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="2" y="3" width="20" height="14" rx="2" />
+                            <line x1="8" y1="21" x2="16" y2="21" />
+                            <line x1="12" y1="17" x2="12" y2="21" />
+                        </svg>
+                        <span>shreesh9 / BATTLESTATION_RIG.md</span>
+                    </div>
+
+                    <!-- RGB Lighting Theme Control Panel -->
+                    <div class="rgb-control-panel"
+                        style="display: flex; align-items: center; gap: 10px; flex-wrap: wrap;">
+                        <span
+                            style="font-family: var(--font-mono); font-size: 11px; color: var(--steel-blue); font-weight: 700; letter-spacing: 0.1em;">RGB
+                            LIGHTS:</span>
+                        <button class="btn btn-ghost rgb-toggle-btn active" data-rgb-mode="neon-red"
+                            style="padding: 4px 10px; font-size: 11px;" data-cursor-label="RGB RED">🔴 Red</button>
+                        <button class="btn btn-ghost rgb-toggle-btn" data-rgb-mode="stealth"
+                            style="padding: 4px 10px; font-size: 11px;" data-cursor-label="RGB STEALTH">🖤
+                            Stealth</button>
+                        <button class="btn btn-ghost rgb-toggle-btn" data-rgb-mode="cyber-white"
+                            style="padding: 4px 10px; font-size: 11px;" data-cursor-label="RGB WHITE">⚪ White</button>
+                    </div>
+                </div>
+
+                <div style="padding: clamp(20px, 2.5vw, 32px);">
+                    <!-- Posh Split Battlestation Showcase Grid -->
+                    <div class="battlestation-showcase-split" style="margin-top: 0;">
+
+                        <!-- Left Column: Interactive Rig Photo Stage & Gallery Strip -->
+                        <div class="rig-stage-box">
+                            <div class="rig-stage-header">
+                                <span style="font-weight: 700; color: var(--crimson-bright); letter-spacing: 0.1em;">//
+                                    REAL BATTLESTATION PHOTOGRAPHY</span>
+                                <span id="rig-active-label" style="color: var(--steel-blue);">Cyberpunk Ambient Room
+                                    Lighting & L-Shaped Desk</span>
+                            </div>
+
+                            <div class="rig-primary-img-wrap">
+                                <img id="rig-main-stage-img"
+                                    src="assets/my rig/WhatsApp Image 2026-07-25 at 3.47.43 PM (4).jpeg"
+                                    alt="Cyberpunk Ambient Room Lighting & L-Shaped Desk" loading="lazy">
+                            </div>
+
+                            <div class="rig-thumbs-strip">
+                                <div class="rig-thumb-item"
+                                    data-url="assets/my rig/WhatsApp Image 2026-07-25 at 3.45.16 PM.jpeg"
+                                    data-label="Custom Crystal White PC Rig (Ryzen 7 5800X + RTX 4060)">
+                                    <img src="assets/my rig/WhatsApp Image 2026-07-25 at 3.45.16 PM.jpeg" alt="PC Rig"
+                                        loading="lazy">
+                                </div>
+                                <div class="rig-thumb-item"
+                                    data-url="assets/my rig/WhatsApp Image 2026-07-25 at 3.45.17 PM.jpeg"
+                                    data-label="Acer 2K 180Hz QHD Display & Arch Hyprland Workspace">
+                                    <img src="assets/my rig/WhatsApp Image 2026-07-25 at 3.45.17 PM.jpeg"
+                                        alt="Display Setup" loading="lazy">
+                                </div>
+                                <div class="rig-thumb-item" data-url="assets/my rig/IMG-20240731-WA0006.jpg"
+                                    data-label="Razer DeathAdder, Portronics Hydra 10 & Toji Deskmat">
+                                    <img src="assets/my rig/IMG-20240731-WA0006.jpg" alt="Peripherals Setup"
+                                        loading="lazy">
+                                </div>
+                                <div class="rig-thumb-item" data-url="assets/my rig/IMG-20240731-WA0088.jpg"
+                                    data-label="Studio Headphones, EKSA E900 & Audio Infrastructure">
+                                    <img src="assets/my rig/IMG-20240731-WA0088.jpg" alt="Audio Infrastructure"
+                                        loading="lazy">
+                                </div>
+                                <div class="rig-thumb-item active-rig-thumb"
+                                    data-url="assets/my rig/WhatsApp Image 2026-07-25 at 3.47.43 PM (4).jpeg"
+                                    data-label="Cyberpunk Ambient Lighting">
+                                    <img src="assets/my rig/WhatsApp Image 2026-07-25 at 3.47.43 PM (4).jpeg"
+                                        alt="Ambient Desk" loading="lazy">
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Right Column: 4 Clean Posh Spec Mini-Cards -->
+                        <div class="battlestation-cards-column">
+
+                            <!-- Card 1: Custom Crystal White PC Rig -->
+                            <div class="battlestation-mini-card" onclick="window.__openHotspotModal('pc-rig')"
+                                data-cursor-label="INSPECT RIG">
+                                <div style="display: flex; justify-content: space-between; align-items: center;">
+                                    <span class="hotspot-badge">RIG 01 • DESKTOP ENGINE</span>
+                                    <span style="font-size: 18px;">💻</span>
+                                </div>
+                                <h3 class="hotspot-title">Custom Crystal White PC Rig</h3>
+                                <p class="hotspot-desc">Ryzen 7 5800X + RTX 4060 8GB + 16GB White ADATA D50 RAM +
+                                    DeepCool LE720 360mm AIO in Ant Esports White Mini Tower.</p>
+                                <span class="hotspot-cta">Click to Inspect Full PC Hardware Specs &rarr;</span>
+                            </div>
+
+                            <!-- Card 2: 2K QHD 180Hz Display & L-Desk -->
+                            <div class="battlestation-mini-card" onclick="window.__openHotspotModal('monitors')"
+                                data-cursor-label="INSPECT DISPLAY">
+                                <div style="display: flex; justify-content: space-between; align-items: center;">
+                                    <span class="hotspot-badge">RIG 02 • DISPLAY & DESK</span>
+                                    <span style="font-size: 18px;">🖥️</span>
+                                </div>
+                                <h3 class="hotspot-title">Acer 2K QHD 180Hz & L-Table</h3>
+                                <p class="hotspot-desc">Acer Nitro 27" 2K 180Hz 0.5ms IPS display, 1080p Mounted TV,
+                                    L-Shaped desk</p>
+                                <span class="hotspot-cta">Click to Inspect Display & Desk Setup &rarr;</span>
+                            </div>
+
+                            <!-- Card 3: Peripherals & Dual Setup -->
+                            <div class="battlestation-mini-card" onclick="window.__openHotspotModal('peripherals')"
+                                data-cursor-label="INSPECT PERIPHERALS">
+                                <div style="display: flex; justify-content: space-between; align-items: center;">
+                                    <span class="hotspot-badge">RIG 03 • INPUT & LAPTOP</span>
+                                    <span style="font-size: 18px;">⌨️</span>
+                                </div>
+                                <h3 class="hotspot-title">Peripherals & Secondary Laptop</h3>
+                                <p class="hotspot-desc">Portronics Hydra 10 Wireless Mechanical, Razer DeathAdder, Ant
+                                    Esports MK1300 60% & HP Pavilion (GTX 1650/Ryzen 5).</p>
+                                <span class="hotspot-cta">Click to Inspect Peripherals & Laptop &rarr;</span>
+                            </div>
+
+                            <!-- Card 4: Audio & Creative Studio -->
+                            <div class="battlestation-mini-card" onclick="window.__openHotspotModal('audio')"
+                                data-cursor-label="INSPECT AUDIO">
+                                <div style="display: flex; justify-content: space-between; align-items: center;">
+                                    <span class="hotspot-badge">RIG 04 • AUDIO & STUDIO</span>
+                                    <span style="font-size: 18px;">🎧</span>
+                                </div>
+                                <h3 class="hotspot-title">EKSA Audio, Studio Tab & Printer</h3>
+                                <p class="hotspot-desc">EKSA E900 + Redgear headphones, OnePlus Nord Buds, 15" Digital
+                                    Drawing Graphics Tab, Epson WiFi printer & iPhone 14.</p>
+                                <span class="hotspot-cta">Click to Inspect Studio & Gear &rarr;</span>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ============================================================
+         EXPERIENCE SECTION
+         ============================================================ -->
+    <section id="experience" class="section" aria-label="Professional experience">
+        <div class="container">
+            <div class="section-label reveal-up">// 02 — EXPERIENCE</div>
+            <h2 class="section-title reveal-up">
+                Mission <span class="highlight">Log</span>
+            </h2>
+            <p class="section-subtitle reveal-up">Production-grade work that made real impact.</p>
+
+            <div class="timeline" style="margin-top: 50px;">
+                <!-- Experience 0: CollegeDoors AI/ML -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">May 25, 2026 — Aug 25, 2026</div>
+                    <div class="timeline-card">
+                        <h3>AI/ML Project Intern</h3>
+                        <div class="company">
+                            CollegeDoors
+                            <span class="location">• Remote</span>
+                            <span class="metric-pill"
+                                style="margin-left:8px;font-size:9px;padding:3px 8px;">CURRENT</span>
+                        </div>
+                        <p>Implementing machine learning solutions and integrating smart functionalities into practical
+                            workflows. Focused on supervised learning models, data pipelines, and AI-driven automation
+                            as part of a 3-month intensive internship program.</p>
+                        <div class="metrics">
+                            <span class="metric-pill">ML Solutions</span>
+                            <span class="metric-pill">AI Integration</span>
+                            <span class="metric-pill">3-Month Program</span>
+                        </div>
+                        <div class="tech-tags">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Machine Learning</span>
+                            <span class="tech-tag">AI</span>
+                            <span class="tech-tag">Data Pipelines</span>
+                            <span class="tech-tag">Automation</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Experience 1: Government -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">Nov 2023 — Feb 2024</div>
+                    <div class="timeline-card">
+                        <h3>Full-Stack Engineering Intern</h3>
+                        <div class="company">
+                            Government of India — GST Department
+                            <span class="location">• Mumbai, On-site</span>
+                        </div>
+                        <p>Designed and launched a bilingual, fully dynamic event-based government website with
+                            comprehensive admin panel. Collaborated directly with Chairman Sunil Jagdale and senior GST
+                            officials through weekly prototype showcases.</p>
+                        <p>The website was officially inaugurated on 21st February 2024, expanding the department's
+                            online presence while dramatically reducing operational costs.</p>
+                        <div class="metrics">
+                            <span class="metric-pill">40% Less Overhead</span>
+                            <span class="metric-pill">50+ Hours Saved</span>
+                            <span class="metric-pill">80% Print Cost Cut</span>
+                        </div>
+                        <div class="tech-tags">
+                            <span class="tech-tag">PHP</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">MySQL</span>
+                            <span class="tech-tag">HTML/CSS</span>
+                            <span class="tech-tag">Admin Panel</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Experience 2: Paradkar -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">Jun 2024 — Jul 2024</div>
+                    <div class="timeline-card">
+                        <h3>Graphic Design Intern</h3>
+                        <div class="company">
+                            Paradkar Designs
+                            <span class="location">• Mumbai, Remote</span>
+                        </div>
+                        <p>Created thumbnails, banners, and logo designs that measurably improved client engagement.
+                            Delivered UI/UX prototypes and supported senior designer workload across multiple concurrent
+                            projects.</p>
+                        <div class="metrics">
+                            <span class="metric-pill">30% More Engagement</span>
+                            <span class="metric-pill">UI/UX Prototypes</span>
+                        </div>
+                        <div class="tech-tags">
+                            <span class="tech-tag">Adobe Illustrator</span>
+                            <span class="tech-tag">UI/UX</span>
+                            <span class="tech-tag">Logo Design</span>
+                            <span class="tech-tag">Figma</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Experience 3: Freelance -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">2018 — 2023</div>
+                    <div class="timeline-card">
+                        <h3>Freelance Digital Artist & UI/UX Designer</h3>
+                        <div class="company">
+                            Fiverr — Independent
+                            <span class="location">• Remote</span>
+                        </div>
+                        <p>Managed 20+ client projects for custom digital art, logo design, and graphic design —
+                            maintaining a perfect 5-star rating throughout. Designed a complete logo set for startup
+                            brand D-Fash with outstanding client reviews.</p>
+                        <div class="metrics">
+                            <span class="metric-pill">20+ Projects</span>
+                            <span class="metric-pill">5★ Rating</span>
+                            <span class="metric-pill">5 Year Track Record</span>
+                        </div>
+                        <div class="tech-tags">
+                            <span class="tech-tag">Digital Art</span>
+                            <span class="tech-tag">Logo Design</span>
+                            <span class="tech-tag">Graphic Design</span>
+                            <span class="tech-tag">Brand Identity</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- ============================================================
+         SKILLS SECTION
+         ============================================================ -->
+    <section id="skills" class="section" aria-label="Technical skills">
+        <div class="container">
+            <div class="section-label reveal-up">// 03 — SKILLS</div>
+            <h2 class="section-title reveal-up">
+                Tech <span class="highlight">Arsenal</span>
+            </h2>
+            <p class="section-subtitle reveal-up">Technologies I wield to build, design, and deploy.</p>
+
+            <!-- Interactive Canvas Constellation -->
+            <div class="skills-constellation reveal-scale">
+                <canvas id="skills-canvas" aria-label="Interactive skill visualization"></canvas>
+            </div>
+
+            <!-- Category Grid -->
+            <div class="skills-categories">
+                <div class="skill-category reveal-up">
+                    <div class="skill-category-header">
+                        <div class="skill-category-icon">⟨/⟩</div>
+                        <div class="skill-category-name">Languages</div>
+                    </div>
+                    <div class="skill-items">
+                        <span class="skill-item">JavaScript</span>
+                        <span class="skill-item">PHP</span>
+                        <span class="skill-item">Python</span>
+                        <span class="skill-item">Java</span>
+                        <span class="skill-item">C++</span>
+                        <span class="skill-item">SQL</span>
+                    </div>
+                </div>
+
+                <div class="skill-category reveal-up">
+                    <div class="skill-category-header">
+                        <div class="skill-category-icon">◈</div>
+                        <div class="skill-category-name">Web & Frameworks</div>
+                    </div>
+                    <div class="skill-items">
+                        <span class="skill-item">React.js</span>
+                        <span class="skill-item">HTML5</span>
+                        <span class="skill-item">CSS3</span>
+                        <span class="skill-item">RESTful APIs</span>
+                        <span class="skill-item">AJAX</span>
+                        <span class="skill-item">JSON</span>
+                        <span class="skill-item">Full-Stack</span>
+                    </div>
+                </div>
+
+                <div class="skill-category reveal-up">
+                    <div class="skill-category-header">
+                        <div class="skill-category-icon">☁</div>
+                        <div class="skill-category-name">Cloud & DevOps</div>
+                    </div>
+                    <div class="skill-items">
+                        <span class="skill-item">AWS Cloud Architecting</span>
+                        <span class="skill-item">CI/CD</span>
+                        <span class="skill-item">Git & GitHub</span>
+                        <span class="skill-item">Docker</span>
+                        <span class="skill-item">Automation</span>
+                    </div>
+                </div>
+
+                <div class="skill-category reveal-up">
+                    <div class="skill-category-header">
+                        <div class="skill-category-icon">⬡</div>
+                        <div class="skill-category-name">AI/ML & Security</div>
+                    </div>
+                    <div class="skill-items">
+                        <span class="skill-item">Supervised ML</span>
+                        <span class="skill-item">Regression</span>
+                        <span class="skill-item">Classification</span>
+                        <span class="skill-item">Generative AI</span>
+                        <span class="skill-item">Cybersecurity</span>
+                    </div>
+                </div>
+
+                <div class="skill-category reveal-up">
+                    <div class="skill-category-header">
+                        <div class="skill-category-icon">⛃</div>
+                        <div class="skill-category-name">Databases</div>
+                    </div>
+                    <div class="skill-items">
+                        <span class="skill-item">MySQL</span>
+                        <span class="skill-item">Oracle DB</span>
+                        <span class="skill-item">Database Design</span>
+                        <span class="skill-item">Query Optimization</span>
+                    </div>
+                </div>
+
+                <div class="skill-category reveal-up">
+                    <div class="skill-category-header">
+                        <div class="skill-category-icon">◎</div>
+                        <div class="skill-category-name">Design & Creative</div>
+                    </div>
+                    <div class="skill-items">
+                        <span class="skill-item">Figma</span>
+                        <span class="skill-item">Adobe Illustrator</span>
+                        <span class="skill-item">Adobe Creative Suite</span>
+                        <span class="skill-item">UI/UX Design</span>
+                        <span class="skill-item">Unreal Engine 5</span>
+                        <span class="skill-item">Logo Design</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- ============================================================
+         PROJECTS SECTION
+         ============================================================ -->
+    <section id="projects" class="section" aria-label="Featured projects">
+        <div class="container">
+            <div class="section-label reveal-up">// 04 — PROJECTS</div>
+            <h2 class="section-title reveal-up">
+                Featured <span class="highlight">Work</span>
+            </h2>
+            <p class="section-subtitle reveal-up">Production systems, creative builds, and engineering challenges.</p>
+
+            <div class="projects-grid" style="margin-top: 50px;">
+                <!-- Project 1: VisionBridge -->
+                <div class="project-card" data-project-id="visionbridge" data-cursor-label="VIEW PROJECT">
+                    <div class="project-image">
+                        <div class="project-image-overlay"></div>
+                        <div class="project-number">01</div>
+                        <img src="assets/vision bridge/thumbnail.png" alt="VisionBridge Assistive Vision Application"
+                            loading="lazy">
+                    </div>
+                    <div class="project-info">
+                        <div class="project-type">// AI • Mobile • Assistive Vision • Under Active Development</div>
+                        <h3 class="project-title">VisionBridge 👁️⚡🌉</h3>
+                        <p class="project-tagline"
+                            style="font-family: var(--font-mono); font-size: 13px; color: var(--crimson-bright); margin-bottom: 8px;">
+                            Next-Gen Accessibility & Computer Vision Assistive Platform</p>
+                        <p class="project-desc">State-of-the-art voice-first assistive mobile app empowering visually
+                            impaired users with real-time Groq Vision AI (Llama 3.2), Google MLKit OCR, and 1-on-1
+                            WebRTC video calling assistance.</p>
+                        <div class="project-metrics">
+                            <div class="project-metric">
+                                <div class="project-metric-value">v9.09</div>
+                                <div class="project-metric-label">Release Version</div>
+                            </div>
+                            <div class="project-metric">
+                                <div class="project-metric-value">0-Cost</div>
+                                <div class="project-metric-label">Infrastructure</div>
+                            </div>
+                            <div class="project-metric">
+                                <div class="project-metric-value">WebRTC</div>
+                                <div class="project-metric-label">P2P Calling</div>
+                            </div>
+                        </div>
+                        <div class="tech-tags">
+                            <span class="tech-tag">Flutter</span>
+                            <span class="tech-tag">Groq Vision AI</span>
+                            <span class="tech-tag">WebRTC</span>
+                            <span class="tech-tag">Google MLKit</span>
+                            <span class="tech-tag">Firebase</span>
+                        </div>
+                        <div style="margin-top: 20px;">
+                            <button class="btn btn-ghost open-project-modal" data-project-id="visionbridge"
+                                data-cursor-label="PROJECT DETAILS"
+                                onclick="event.stopPropagation(); window.__openProjectModal('visionbridge')">
+                                View Media Showcase & Details &rarr;
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2: GOVT of INDIA GST Dept & ShivJayanti Utsav Samiti Portal -->
+                <div class="project-card" data-project-id="gstdept" data-cursor-label="VIEW PROJECT">
+                    <div class="project-image">
+                        <div class="project-image-overlay"></div>
+                        <div class="project-number">02</div>
+                        <img src="assets/gst/gst dept.jpg" alt="GST Department Government Portal Project"
+                            loading="lazy">
+                    </div>
+                    <div class="project-info">
+                        <div class="project-type">// Government • Full-Stack • Live Operational</div>
+                        <h3 class="project-title">GOVT of INDIA GST Dept & ShivJayanti Utsav Samiti Portal</h3>
+                        <p class="project-tagline"
+                            style="font-family: var(--font-mono); font-size: 13px; color: var(--crimson-bright); margin-bottom: 8px;">
+                            Official State Portal, Internal Web App & Cultural Event Platform</p>
+                        <p class="project-desc">Bilingual, fully dynamic event-based government website built for
+                            ShivJayanti Utsav Samiti with administrative management panel. Inaugurated on 21st Feb 2024
+                            by Chairman Sunil Jagdale & senior GST officials.</p>
+                        <div class="project-metrics">
+                            <div class="project-metric">
+                                <div class="project-metric-value" data-count="40">40%</div>
+                                <div class="project-metric-label">Less Overhead</div>
+                            </div>
+                            <div class="project-metric">
+                                <div class="project-metric-value" data-count="50">50+</div>
+                                <div class="project-metric-label">Hours Saved</div>
+                            </div>
+                            <div class="project-metric">
+                                <div class="project-metric-value" data-count="80">80%</div>
+                                <div class="project-metric-label">Print Cost Cut</div>
+                            </div>
+                        </div>
+                        <div class="tech-tags">
+                            <span class="tech-tag">PHP</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">MySQL</span>
+                            <span class="tech-tag">HTML5 / CSS3</span>
+                        </div>
+                        <div style="margin-top: 20px;">
+                            <button class="btn btn-primary open-project-modal" data-project-id="gstdept"
+                                data-cursor-label="WATCH VIDEO"
+                                onclick="event.stopPropagation(); window.__openProjectModal('gstdept')">
+                                Watch Videos & Gallery &rarr;
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3: PriceSenseAI -->
+                <div class="project-card" data-project-id="pricesense" data-cursor-label="VIEW PROJECT">
+                    <div class="project-image">
+                        <a href="https://price-sense-ai.vercel.app/" target="_blank" rel="noopener noreferrer"
+                            style="display: block; width: 100%; height: 100%;">
+                            <div class="project-image-overlay"></div>
+                            <div class="project-number">03</div>
+                            <img src="assets/price sense/Screenshot 2026-07-25 150902.png"
+                                alt="PriceSenseAI Smart Product Price Tracker" loading="lazy">
+                        </a>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-type">// Full-Stack • AI • Live & Published Paper</div>
+                        <h3 class="project-title">PriceSenseAI</h3>
+                        <p class="project-tagline"
+                            style="font-family: var(--font-mono); font-size: 13px; color: var(--crimson-bright); margin-bottom: 8px;">
+                            Automated E-Commerce Price Sensing & Intelligence Platform</p>
+                        <p class="project-desc">Automated price tracking platform across Amazon, Walmart, and Zara.
+                            Features AI web scraping (Firecrawl), Supabase PostgreSQL with pg_cron automation, Recharts
+                            analytics, and Resend email alerts.</p>
+                        <div class="project-metrics">
+                            <div class="project-metric">
+                                <div class="project-metric-value">Next.js 16</div>
+                                <div class="project-metric-label">App Router</div>
+                            </div>
+                            <div class="project-metric">
+                                <div class="project-metric-value">Firecrawl</div>
+                                <div class="project-metric-label">AI Extraction</div>
+                            </div>
+                            <div class="project-metric">
+                                <div class="project-metric-value">Supabase</div>
+                                <div class="project-metric-label">pg_cron Alerts</div>
+                            </div>
+                        </div>
+                        <div class="tech-tags">
+                            <span class="tech-tag">Next.js 16</span>
+                            <span class="tech-tag">Firecrawl AI</span>
+                            <span class="tech-tag">Supabase</span>
+                            <span class="tech-tag">Recharts</span>
+                            <span class="tech-tag">Resend Email</span>
+                        </div>
+                        <div style="margin-top: 20px; display: flex; gap: 12px; flex-wrap: wrap;">
+                            <a href="https://price-sense-ai.vercel.app/" target="_blank" rel="noopener noreferrer"
+                                class="btn btn-primary" data-cursor-label="LIVE DEMO">
+                                Launch Live Site ↗
+                            </a>
+                            <button class="btn btn-ghost open-project-modal" data-project-id="pricesense"
+                                data-cursor-label="SCREENSHOTS"
+                                onclick="event.stopPropagation(); window.__openProjectModal('pricesense')">
+                                View Screenshots &rarr;
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4: Koshi Career Coach -->
+                <div class="project-card" data-project-id="koshi" data-cursor-label="VIEW PROJECT">
+                    <div class="project-image">
+                        <a href="https://koshi-six.vercel.app/" target="_blank" rel="noopener noreferrer"
+                            style="display: block; width: 100%; height: 100%;">
+                            <div class="project-image-overlay"></div>
+                            <div class="project-number">04</div>
+                            <img src="assets/koshi/Screenshot 2026-07-25 150831.png"
+                                alt="Koshi AI Career Coach Platform" loading="lazy">
+                        </a>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-type">// AI • EdTech • Live Platform</div>
+                        <h3 class="project-title">Koshi Career Coach</h3>
+                        <p class="project-tagline"
+                            style="font-family: var(--font-mono); font-size: 13px; color: var(--crimson-bright); margin-bottom: 8px;">
+                            Interactive Career Guidance & Mentorship Platform</p>
+                        <p class="project-desc">AI-powered personalized career guidance and skill navigator platform
+                            empowering students with tailored learning roadmaps, skill gap diagnostics, and interactive
+                            mentoring.</p>
+                        <div class="project-metrics">
+                            <div class="project-metric">
+                                <div class="project-metric-value">AI Coach</div>
+                                <div class="project-metric-label">Personalized</div>
+                            </div>
+                            <div class="project-metric">
+                                <div class="project-metric-value">Roadmaps</div>
+                                <div class="project-metric-label">Skill Gap AI</div>
+                            </div>
+                        </div>
+                        <div class="tech-tags">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">Tailwind CSS</span>
+                            <span class="tech-tag">AI Guidance Engine</span>
+                        </div>
+                        <div style="margin-top: 20px; display: flex; gap: 12px; flex-wrap: wrap;">
+                            <a href="https://koshi-six.vercel.app/" target="_blank" rel="noopener noreferrer"
+                                class="btn btn-primary" data-cursor-label="LIVE DEMO">
+                                Launch Live Site ↗
+                            </a>
+                            <button class="btn btn-ghost open-project-modal" data-project-id="koshi"
+                                data-cursor-label="SCREENSHOTS"
+                                onclick="event.stopPropagation(); window.__openProjectModal('koshi')">
+                                View Screenshots &rarr;
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 5: UE5 Game Developer -->
+                <div class="project-card" data-project-id="ue5dev" data-cursor-label="VIEW PROJECT">
+                    <div class="project-image">
+                        <div class="project-image-overlay"></div>
+                        <div class="project-number">05</div>
+                        <img src="assets/ue 5/WhatsApp Image 2026-07-25 at 3.47.43 PM (2).jpeg"
+                            alt="UE5 Environment & Game Dev Showcase" loading="lazy">
+                    </div>
+                    <div class="project-info">
+                        <div class="project-type">// Game Dev • 3D Art • In Showcase</div>
+                        <h3 class="project-title">UE5 Game Developer — Environment Design & Solo Game Dev</h3>
+                        <p class="project-tagline"
+                            style="font-family: var(--font-mono); font-size: 13px; color: var(--crimson-bright); margin-bottom: 8px;">
+                            High-Fidelity Souls-like Action RPG & Environment Art</p>
+                        <p class="project-desc">Custom 3D environments and gameplay systems engineered in Unreal Engine
+                            5 with C++ and Blueprint scripting. Features PBR material setups, volumetric lighting,
+                            landscape editing, and optimized RTX 4060 performance passes.</p>
+                        <div class="project-metrics">
+                            <div class="project-metric">
+                                <div class="project-metric-value">UE 5.3</div>
+                                <div class="project-metric-label">Lumen & Nanite</div>
+                            </div>
+                            <div class="project-metric">
+                                <div class="project-metric-value">C++</div>
+                                <div class="project-metric-label">& Blueprints</div>
+                            </div>
+                            <div class="project-metric">
+                                <div class="project-metric-value">RTX 4060</div>
+                                <div class="project-metric-label">Optimized</div>
+                            </div>
+                        </div>
+                        <div class="tech-tags">
+                            <span class="tech-tag">Unreal Engine 5</span>
+                            <span class="tech-tag">C++</span>
+                            <span class="tech-tag">Blueprints</span>
+                            <span class="tech-tag">PBR Materials</span>
+                            <span class="tech-tag">Lumen GI</span>
+                        </div>
+                        <div style="margin-top: 20px;">
+                            <button class="btn btn-primary open-project-modal" data-project-id="ue5dev"
+                                data-cursor-label="VIEW ART SHOWCASE"
+                                onclick="event.stopPropagation(); window.__openProjectModal('ue5dev')">
+                                View Renders & Breakdown &rarr;
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <div class="section-divider"></div>
+
+    <!-- ============================================================
+         CERTIFICATIONS SECTION (VERIFIED CREDENTIAL MATRIX)
+         ============================================================ -->
+    <section id="certifications" class="section" aria-label="Certifications and licenses">
+        <div class="container">
+            <div class="section-label reveal-up">// 05 — CERTIFICATIONS</div>
+            <h2 class="section-title reveal-up">
+                Achievement <span class="highlight">Matrix</span>
+            </h2>
+            <p class="section-subtitle reveal-up">Verified credentials across cloud architecture, AI & ML, security, and
+                full-stack engineering. Click any card to verify official credential.</p>
+
+            <div class="certs-grid" style="margin-top: 50px;">
+
+                <!-- 1. AWS Academy Cloud Architecting -->
+                <a href="https://www.credly.com/badges/00e2619f-8b8b-4f13-adc1-cc3a0d61597b/public_url" target="_blank"
+                    rel="noopener noreferrer" class="cert-card reveal-up"
+                    style="background-image: url('assets/cert/Screenshot 2026-07-30 090224.png');"
+                    data-cursor-label="CREDLY VERIFY">
+                    <div class="cert-card-overlay"></div>
+                    <div class="cert-card-content">
+                        <div>
+                            <span class="cert-badge-tag">VERIFIED CREDENTIAL ↗</span>
+                            <span class="cert-score">92%</span>
+                        </div>
+                        <h3 class="cert-name">AWS Academy Cloud Architecting</h3>
+                        <div class="cert-issuer">Amazon Web Services • Credly</div>
+                    </div>
+                </a>
+
+                <!-- 2. AWS Academy Graduate - Cloud Foundations -->
+                <a href="https://www.credly.com/badges/d94c020c-4103-48d9-bc83-8312772757c6/linked_in_profile"
+                    target="_blank" rel="noopener noreferrer" class="cert-card reveal-up"
+                    style="background-image: url('assets/cert/Screenshot 2026-07-30 090253.png');"
+                    data-cursor-label="CREDLY VERIFY">
+                    <div class="cert-card-overlay"></div>
+                    <div class="cert-card-content">
+                        <div>
+                            <span class="cert-badge-tag">VERIFIED CREDENTIAL ↗</span>
+                        </div>
+                        <h3 class="cert-name">AWS Academy Cloud Foundations</h3>
+                        <div class="cert-issuer">Amazon Web Services • Credly</div>
+                    </div>
+                </a>
+
+                <!-- 3. Supervised Machine Learning -->
+                <a href="https://www.coursera.org/account/accomplishments/verify/PIFOG7JMCHRK" target="_blank"
+                    rel="noopener noreferrer" class="cert-card reveal-up"
+                    style="background-image: url('assets/cert/Screenshot 2026-07-30 090259.png');"
+                    data-cursor-label="COURSERA VERIFY">
+                    <div class="cert-card-overlay"></div>
+                    <div class="cert-card-content">
+                        <div>
+                            <span class="cert-badge-tag">VERIFIED CREDENTIAL ↗</span>
+                        </div>
+                        <h3 class="cert-name">Supervised ML: Regression & Classification</h3>
+                        <div class="cert-issuer">DeepLearning.AI • Coursera</div>
+                    </div>
+                </a>
+
+                <!-- 4. DevOps 101: What is DevOps? -->
+                <a href="https://www.simplilearn.com/skillup-certificate-landing?token=eyJjb3Vyc2VfaWQiOiIzMjc1IiwiY2VydGlmaWNhdGVfdXJsIjoiaHR0cHM6XC9cL2NlcnRpZmljYXRlcy5zaW1wbGljZG4ubmV0XC9zaGFyZVwvMTAxMDkwMDhfOTM5OTQ5Ml8xNzc6Mjc4NTk1MzU3LnBuZyIsInVzZXJuYW1lIjoiU2hyZWVzaCBOYWxhd2FkZSJ9"
+                    target="_blank" rel="noopener noreferrer" class="cert-card reveal-up"
+                    style="background-image: url('assets/cert/Screenshot 2026-07-30 090230.png');"
+                    data-cursor-label="VERIFY CERT">
+                    <div class="cert-card-overlay"></div>
+                    <div class="cert-card-content">
+                        <div>
+                            <span class="cert-badge-tag">VERIFIED CREDENTIAL ↗</span>
+                        </div>
+                        <h3 class="cert-name">DevOps 101: What is DevOps?</h3>
+                        <div class="cert-issuer">Simplilearn SkillUp</div>
+                    </div>
+                </a>
+
+                <!-- 5. Generative AI Fundamentals -->
+                <a href="https://www.simplilearn.com/skillup-certificate-landing?token=eyJjb3Vyc2VfaWQiOiI0NzE1IiwiY2VydGlmaWNhdGVfdXJsIjoiaHR0cHM6XC9cL2NlcnRpZmljYXRlcy5zaW1wbGljZG4ubmV0XC9zaGFyZVwvOTAyMzk4N185Mzk5NDkyMTc1ODQ3NTQyMjI5NC5wbmciLCJ1c2VybmFtZSI6IlNocmVlc2ggTmFsYXdhZGUifQ%3D%3D"
+                    target="_blank" rel="noopener noreferrer" class="cert-card reveal-up"
+                    style="background-image: url('assets/cert/Screenshot 2026-07-30 090320.png');"
+                    data-cursor-label="VERIFY CERT">
+                    <div class="cert-card-overlay"></div>
+                    <div class="cert-card-content">
+                        <div>
+                            <span class="cert-badge-tag">VERIFIED CREDENTIAL ↗</span>
+                        </div>
+                        <h3 class="cert-name">Generative AI Fundamentals</h3>
+                        <div class="cert-issuer">Simplilearn SkillUp</div>
+                    </div>
+                </a>
+
+                <!-- 6. Computer Systems & Security by MIT -->
+                <a href="https://cursa.app/en/my-certificate/certcca5de8a45e1197d6bc271c2abd19f26" target="_blank"
+                    rel="noopener noreferrer" class="cert-card reveal-up"
+                    style="background-image: url('assets/cert/Screenshot 2026-07-30 090237.png');"
+                    data-cursor-label="CURSA VERIFY">
+                    <div class="cert-card-overlay"></div>
+                    <div class="cert-card-content">
+                        <div>
+                            <span class="cert-badge-tag">VERIFIED CREDENTIAL ↗</span>
+                        </div>
+                        <h3 class="cert-name">Computer Systems & Security</h3>
+                        <div class="cert-issuer">MIT • Cursa</div>
+                    </div>
+                </a>
+
+                <!-- 7. Cryptography & Network Security -->
+                <a href="https://cursa.app/en/my-certificate/cert4bec0c74ecc8be234786ca2ed6c56a6a" target="_blank"
+                    rel="noopener noreferrer" class="cert-card reveal-up"
+                    style="background-image: url('assets/cert/Screenshot 2026-07-30 090242.png');"
+                    data-cursor-label="CURSA VERIFY">
+                    <div class="cert-card-overlay"></div>
+                    <div class="cert-card-content">
+                        <div>
+                            <span class="cert-badge-tag">VERIFIED CREDENTIAL ↗</span>
+                        </div>
+                        <h3 class="cert-name">Cryptography & Network Security</h3>
+                        <div class="cert-issuer">Cursa</div>
+                    </div>
+                </a>
+
+                <!-- 8. Introduction to DevOps Tools -->
+                <a href="https://www.simplilearn.com/skillup-certificate-landing?token=eyJjb3Vyc2VfaWQiOiIxODA3IiwiY2VydGlmaWNhdGVfdXJsIjoiaHR0cHM6XC9cL2NlcnRpZmljYXRlcy5zaW1wbGljZG4ubmV0XC9zaGFyZVwvMTAxMTUxOTVfMTA0MDI4NjNfMTc3NjM3OTQ4MjU4MS5wbmciLCJ1c2VybmFtZSI6bnVsbH0%3D"
+                    target="_blank" rel="noopener noreferrer" class="cert-card reveal-up"
+                    style="background-image: url('assets/cert/Screenshot 2026-07-30 090159.png');"
+                    data-cursor-label="VERIFY CERT">
+                    <div class="cert-card-overlay"></div>
+                    <div class="cert-card-content">
+                        <div>
+                            <span class="cert-badge-tag">VERIFIED CREDENTIAL ↗</span>
+                        </div>
+                        <h3 class="cert-name">Introduction to DevOps Tools</h3>
+                        <div class="cert-issuer">Simplilearn SkillUp</div>
+                    </div>
+                </a>
+
+                <!-- 9. React JS Certification -->
+                <a href="https://www.simplilearn.com/skillup-certificate-landing?token=eyJjb3Vyc2VfaWQiOiIxNzI1IiwiY2VydGlmaWNhdGVfdXJsIjoiaHR0cHM6XC9cL2NlcnRpZmljYXRlcy5zaW1wbGljZG4ubmV0XC9zaGFyZVwvOTEwNTI0Ml85Mzk5NDkyMTc1OTY4MjI3Mjg3NC5wbmciLCJ1c2VybmFtZSI6bnVsbH0%3D"
+                    target="_blank" rel="noopener noreferrer" class="cert-card reveal-up"
+                    style="background-image: url('assets/cert/Screenshot 2026-07-30 090305.png');"
+                    data-cursor-label="VERIFY CERT">
+                    <div class="cert-card-overlay"></div>
+                    <div class="cert-card-content">
+                        <div>
+                            <span class="cert-badge-tag">VERIFIED CREDENTIAL ↗</span>
+                        </div>
+                        <h3 class="cert-name">React JS for Beginners</h3>
+                        <div class="cert-issuer">Simplilearn SkillUp</div>
+                    </div>
+                </a>
+
+                <!-- 10. Celonis Foundation -->
+                <a href="https://www.credly.com/badges/ab85710e-33bd-4070-9283-9a72f6fd3d28/public_url" target="_blank"
+                    rel="noopener noreferrer" class="cert-card reveal-up"
+                    style="background-image: url('assets/cert/Screenshot 2026-07-30 090315.png');"
+                    data-cursor-label="CREDLY VERIFY">
+                    <div class="cert-card-overlay"></div>
+                    <div class="cert-card-content">
+                        <div>
+                            <span class="cert-badge-tag">VERIFIED CREDENTIAL ↗</span>
+                        </div>
+                        <h3 class="cert-name">Celonis Foundation — Process Mining</h3>
+                        <div class="cert-issuer">Celonis • Credly</div>
+                    </div>
+                </a>
+
+                <!-- 11. Java Fundamentals -->
+                <a href="https://learn.campuscredentials.com/learn/certificate/11021714-214349" target="_blank"
+                    rel="noopener noreferrer" class="cert-card reveal-up"
+                    style="background-image: url('assets/cert/Screenshot 2026-07-30 090325.png');"
+                    data-cursor-label="VERIFY CERT">
+                    <div class="cert-card-overlay"></div>
+                    <div class="cert-card-content">
+                        <div>
+                            <span class="cert-badge-tag">VERIFIED CREDENTIAL ↗</span>
+                        </div>
+                        <h3 class="cert-name">Java Fundamentals</h3>
+                        <div class="cert-issuer">Campus Credentials</div>
+                    </div>
+                </a>
+
+                <!-- 12. FSD Software Testing -->
+                <a href="https://skillsoft.digitalbadges.skillsoft.com/7c17d8eb-3690-4f2b-b871-718c9f780ba1#acc.u7GoAqTC"
+                    target="_blank" rel="noopener noreferrer" class="cert-card reveal-up"
+                    style="background-image: url('assets/cert/Screenshot 2026-07-30 090332.png');"
+                    data-cursor-label="SKILLSOFT VERIFY">
+                    <div class="cert-card-overlay"></div>
+                    <div class="cert-card-content">
+                        <div>
+                            <span class="cert-badge-tag">VERIFIED CREDENTIAL ↗</span>
+                        </div>
+                        <h3 class="cert-name">FSD Software Testing</h3>
+                        <div class="cert-issuer">Skillsoft Digital Badge</div>
+                    </div>
+                </a>
+
+                <!-- 13. Java Programming Test (IIT Bombay) -->
+                <div class="cert-card reveal-up"
+                    style="background-image: url('assets/cert/Screenshot 2026-07-30 090149.png');"
+                    data-cursor-label="IIT BOMBAY">
+                    <div class="cert-card-overlay"></div>
+                    <div class="cert-card-content">
+                        <div>
+                            <span class="cert-badge-tag">ACADEMIC CERT 🎖</span>
+                            <span class="cert-score">90%</span>
+                        </div>
+                        <h3 class="cert-name">Java Programming Test</h3>
+                        <div class="cert-issuer">IIT Bombay Spoken Tutorial</div>
+                    </div>
+                </div>
+
+                <!-- 14. Python Programming Test (IIT Bombay) -->
+                <div class="cert-card reveal-up"
+                    style="background-image: url('assets/cert/Screenshot 2026-07-30 090138.png');"
+                    data-cursor-label="IIT BOMBAY">
+                    <div class="cert-card-overlay"></div>
+                    <div class="cert-card-content">
+                        <div>
+                            <span class="cert-badge-tag">ACADEMIC CERT 🎖</span>
+                            <span class="cert-score">85%</span>
+                        </div>
+                        <h3 class="cert-name">Python Programming Test</h3>
+                        <div class="cert-issuer">IIT Bombay Spoken Tutorial</div>
+                    </div>
+                </div>
+
+                <!-- 15. Oracle Academy Database Foundations -->
+                <div class="cert-card reveal-up"
+                    style="background-image: url('assets/cert/Screenshot 2026-07-30 090129.png');"
+                    data-cursor-label="ORACLE">
+                    <div class="cert-card-overlay"></div>
+                    <div class="cert-card-content">
+                        <div>
+                            <span class="cert-badge-tag">ACADEMIC CERT 🎖</span>
+                        </div>
+                        <h3 class="cert-name">Oracle Academy — Database Foundations</h3>
+                        <div class="cert-issuer">Oracle Academy</div>
+                    </div>
+                </div>
+
+                <!-- 16. Networking Essentials (Cisco) -->
+                <div class="cert-card reveal-up"
+                    style="background-image: url('assets/cert/Screenshot 2026-07-30 090041.png');"
+                    data-cursor-label="CISCO">
+                    <div class="cert-card-overlay"></div>
+                    <div class="cert-card-content">
+                        <div>
+                            <span class="cert-badge-tag">NETWORKING CERT 🎖</span>
+                        </div>
+                        <h3 class="cert-name">Networking Essentials</h3>
+                        <div class="cert-issuer">Cisco Networking Academy</div>
+                    </div>
+                </div>
+
+                <!-- 17. PHP & MySQL Training (IIT Bombay) -->
+                <div class="cert-card reveal-up"
+                    style="background-image: url('assets/cert/Screenshot 2026-07-30 090107.png');"
+                    data-cursor-label="IIT BOMBAY">
+                    <div class="cert-card-overlay"></div>
+                    <div class="cert-card-content">
+                        <div>
+                            <span class="cert-badge-tag">ACADEMIC CERT 🎖</span>
+                            <span class="cert-score">61%</span>
+                        </div>
+                        <h3 class="cert-name">PHP & MySQL Training</h3>
+                        <div class="cert-issuer">IIT Bombay Spoken Tutorial</div>
+                    </div>
+                </div>
+
+                <!-- 18. R Training (IIT Bombay) -->
+                <div class="cert-card reveal-up"
+                    style="background-image: url('assets/cert/Screenshot 2026-07-30 090025.png');"
+                    data-cursor-label="IIT BOMBAY">
+                    <div class="cert-card-overlay"></div>
+                    <div class="cert-card-content">
+                        <div>
+                            <span class="cert-badge-tag">ACADEMIC CERT 🎖</span>
+                            <span class="cert-score">92.5%</span>
+                        </div>
+                        <h3 class="cert-name">R Programming Training</h3>
+                        <div class="cert-issuer">IIT Bombay Spoken Tutorial</div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- ============================================================
+         EDUCATION SECTION
+         ============================================================ -->
+    <section id="education" class="section" aria-label="Education">
+        <div class="container">
+            <div class="section-label reveal-up">// 06 — EDUCATION</div>
+            <h2 class="section-title reveal-up">
+                Origin <span class="highlight">Code</span>
+            </h2>
+
+            <div class="education-cards" style="margin-top: 50px;">
+                <div class="edu-card reveal-up">
+                    <div class="year-badge">2024 — Present</div>
+                    <h3>A.P. Shah Institute of Technology</h3>
+                    <div class="degree">B.Tech — Computer Science & Engineering (AI & ML)</div>
+                    <div class="grade">Thane, Maharashtra</div>
+                </div>
+
+                <div class="edu-card reveal-up">
+                    <div class="year-badge">2021 — 2024</div>
+                    <h3>Vidyalankar Group of Educational Institutes</h3>
+                    <div class="degree">Diploma — Computer Engineering</div>
+                    <div class="grade">Grade: 85% • Skills: Android Dev, DBMS</div>
+                </div>
+
+                <div class="edu-card reveal-up">
+                    <div class="year-badge">Passing Year 2021</div>
+                    <h3>St. Francis Xavier High School</h3>
+                    <div class="degree">Secondary School Certificate (SSC)</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- ============================================================
+         CONTACT SECTION
+         ============================================================ -->
+    <section id="contact" class="section" aria-label="Contact">
+        <div class="container">
+            <div class="section-label reveal-up">// 07 — CONTACT</div>
+
+            <div class="contact-layout">
+                <div class="contact-info">
+                    <h2 class="reveal-up">
+                        Let's Build<br>Something <span class="highlight">Great</span>
+                    </h2>
+                    <p class="reveal-up">
+                        I'm always interested in new opportunities — whether it's a full-time role, internship,
+                        freelance project, or just a conversation about technology. Let's connect.
+                    </p>
+
+                    <div class="contact-links reveal-up">
+                        <a href="mailto:shreeshnalawade9@gmail.com" class="contact-link-item" data-cursor-label="EMAIL">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20"
+                                height="20">
+                                <rect x="2" y="4" width="20" height="16" rx="2" />
+                                <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+                            </svg>
+                            shreeshnalawade9@gmail.com
+                        </a>
+                        <a href="tel:+918591103474" class="contact-link-item" data-cursor-label="CALL">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20"
+                                height="20">
+                                <path
+                                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+                            </svg>
+                            +91 8591103474
+                        </a>
+                        <a href="https://linkedin.com/in/shreesh9" class="contact-link-item"
+                            data-cursor-label="LINKEDIN" target="_blank" rel="noopener noreferrer">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20"
+                                height="20">
+                                <path
+                                    d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+                                <rect x="2" y="9" width="4" height="12" />
+                                <circle cx="4" cy="4" r="2" />
+                            </svg>
+                            linkedin.com/in/shreesh9
+                        </a>
+                        <a href="https://github.com/shreesh9" class="contact-link-item" data-cursor-label="GITHUB"
+                            target="_blank" rel="noopener noreferrer">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20"
+                                height="20">
+                                <path
+                                    d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
+                            </svg>
+                            github.com/shreesh9
+                        </a>
+                        <a href="https://www.instagram.com/shxeesh_" class="contact-link-item"
+                            data-cursor-label="INSTAGRAM" target="_blank" rel="noopener noreferrer">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20"
+                                height="20">
+                                <rect x="2" y="2" width="20" height="20" rx="5" />
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+                            </svg>
+                            instagram.com/shxeesh_
+                        </a>
+                        <a href="https://www.youtube.com/@shxeesh" class="contact-link-item" data-cursor-label="YOUTUBE"
+                            target="_blank" rel="noopener noreferrer">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20"
+                                height="20">
+                                <path
+                                    d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19.1c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z" />
+                                <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02" />
+                            </svg>
+                            youtube.com/@shxeesh
+                        </a>
+                        <a href="https://linktr.ee/shreesh9" class="contact-link-item" data-cursor-label="LINKTREE"
+                            target="_blank" rel="noopener noreferrer">
+                            <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
+                                <path
+                                    d="M13.511 5.853l3.963-3.963 1.982 1.981-3.963 3.964 4.529 4.529-1.982 1.982-3.418-3.418v6.758h-2.804V10.93l-3.418 3.418-1.982-1.982 4.529-4.529-3.963-3.964 1.982-1.981 3.963 3.963V0h2.804v5.853zM10.707 19.684h2.804v4.316h-2.804v-4.316z" />
+                            </svg>
+                            linktr.ee/shreesh9
+                        </a>
+                        <span class="contact-link-item" style="cursor:default;">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20"
+                                height="20">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                                <circle cx="12" cy="10" r="3" />
+                            </svg>
+                            Mumbai, India
+                        </span>
+                    </div>
+                </div>
+
+                <form class="contact-form reveal-up" id="contact-form" onsubmit="handleFormSubmit(event)">
+                    <div class="form-group">
+                        <input type="text" id="form-name" name="name" placeholder="// YOUR NAME" required
+                            autocomplete="name">
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="form-email" name="email" placeholder="// YOUR EMAIL" required
+                            autocomplete="email">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="form-subject" name="subject" placeholder="// SUBJECT">
+                    </div>
+                    <div class="form-group">
+                        <textarea id="form-message" name="message" placeholder="// YOUR MESSAGE" required></textarea>
+                    </div>
+                    <div class="form-submit">
+                        <button type="submit" class="btn btn-primary" data-cursor-label="SEND">
+                            Transmit Message →
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+         FOOTER
+         ============================================================ -->
+    <footer id="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-left">
+                    &copy; 2026 <span class="red">Shreesh Nalawade</span> — All systems operational.
+                </div>
+                <div class="footer-right">
+                    <a href="https://linkedin.com/in/shreesh9" class="footer-social" aria-label="LinkedIn"
+                        target="_blank" rel="noopener noreferrer">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+                            <rect x="2" y="9" width="4" height="12" />
+                            <circle cx="4" cy="4" r="2" />
+                        </svg>
+                    </a>
+                    <a href="https://github.com/shreesh9" class="footer-social" aria-label="GitHub" target="_blank"
+                        rel="noopener noreferrer">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path
+                                d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
+                        </svg>
+                    </a>
+                    <a href="https://www.instagram.com/shxeesh_" class="footer-social" aria-label="Instagram"
+                        target="_blank" rel="noopener noreferrer">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="2" y="2" width="20" height="20" rx="5" />
+                            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+                        </svg>
+                    </a>
+                    <a href="https://www.youtube.com/@shxeesh" class="footer-social" aria-label="YouTube"
+                        target="_blank" rel="noopener noreferrer">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path
+                                d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19.1c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z" />
+                            <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02" />
+                        </svg>
+                    </a>
+                    <a href="mailto:shreeshnalawade9@gmail.com" class="footer-social" aria-label="Email">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="2" y="4" width="20" height="16" rx="2" />
+                            <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-signal">// End Transmission</div>
+        </div>
+    </footer>
+
+    <!-- Interactive Cyber Terminal Modal Overlay -->
+    <div id="terminal-modal" class="terminal-modal" role="dialog" aria-hidden="true">
+        <div class="terminal-container">
+            <div class="terminal-header">
+                <div class="terminal-dots">
+                    <span class="dot dot-close" id="terminal-close-btn"></span>
+                    <span class="dot dot-min"></span>
+                    <span class="dot dot-max"></span>
+                </div>
+                <div class="terminal-title">shreesh@cyber-system:~ (v4.5-terminal)</div>
+            </div>
+            <div class="terminal-body" id="terminal-output">
+                <div class="terminal-line">Welcome to <span class="cyan">Shreesh Nalawade's Interactive Cyber Terminal
+                        v4.5</span>.</div>
+                <div class="terminal-line">Type <span class="green">'help'</span> to see available system commands.
+                </div>
+            </div>
+            <div class="terminal-input-row">
+                <span class="terminal-prompt">shreesh@system:~$</span>
+                <input type="text" id="terminal-input" placeholder="Type a command (e.g. help, skills, matrix)..."
+                    autocomplete="off" spellcheck="false">
+            </div>
+        </div>
+    </div>
+
+    <!-- Project Detail & Gallery Showcase Modal -->
+    <div id="project-detail-modal" class="project-modal" role="dialog" aria-hidden="true">
+        <div class="project-modal-content" data-lenis-prevent>
+            <button class="project-modal-close" id="project-modal-close-btn"
+                aria-label="Close Project Modal">&times;</button>
+
+            <div class="project-modal-body" id="project-modal-body">
+                <!-- Dynamically populated by main.js -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Audio SFX Toggle Button -->
+
+
+    <button id="sfx-toggle-btn" aria-label="Toggle Audio Sound Effects" data-cursor-label="AUDIO SFX">
+        <span class="sfx-waves">
+            <span class="sfx-wave-bar"></span>
+            <span class="sfx-wave-bar"></span>
+            <span class="sfx-wave-bar"></span>
+        </span>
+        <span id="sfx-status">SFX: ON</span>
+    </button>
+
+    <!-- Main JavaScript -->
+    <script src="main.js" defer></script>
+
+</body>
+
+</html>
